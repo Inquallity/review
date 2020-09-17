@@ -1,0 +1,5 @@
+include ':app'
+include ':entities:mainer'
+include ':entities:scanner'
+include ':features:main'
+rootProject.name = "dagger_sandbox"

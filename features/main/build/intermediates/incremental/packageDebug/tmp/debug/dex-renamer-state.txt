@@ -1,0 +1,4 @@
+#Thu Sep 17 21:10:29 MSK 2020
+base.0=/home/inquallity/android/dagger_sandbox/features/main/build/intermediates/dex/debug/mergeProjectDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

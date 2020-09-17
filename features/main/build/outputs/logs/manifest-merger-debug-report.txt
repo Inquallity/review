@@ -1,0 +1,43 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/inquallity/android/dagger_sandbox/features/main/src/main/AndroidManifest.xml:1:1-7:12
+INJECTED from /home/inquallity/android/dagger_sandbox/features/main/src/main/AndroidManifest.xml:1:1-7:12
+INJECTED from /home/inquallity/android/dagger_sandbox/features/main/src/main/AndroidManifest.xml:1:1-7:12
+INJECTED from /home/inquallity/android/dagger_sandbox/features/main/src/main/AndroidManifest.xml:1:1-7:12
+INJECTED from /home/inquallity/android/dagger_sandbox/features/main/src/main/AndroidManifest.xml:1:1-7:12
+INJECTED from /home/inquallity/android/dagger_sandbox/features/main/src/main/AndroidManifest.xml:1:1-7:12
+INJECTED from /home/inquallity/android/dagger_sandbox/features/main/src/main/AndroidManifest.xml:1:1-7:12
+	package
+		ADDED from /home/inquallity/android/dagger_sandbox/features/main/src/main/AndroidManifest.xml:2:5-56
+		INJECTED from /home/inquallity/android/dagger_sandbox/features/main/src/main/AndroidManifest.xml
+		INJECTED from /home/inquallity/android/dagger_sandbox/features/main/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/inquallity/android/dagger_sandbox/features/main/src/main/AndroidManifest.xml
+		ADDED from /home/inquallity/android/dagger_sandbox/features/main/src/main/AndroidManifest.xml:1:1-7:12
+		INJECTED from /home/inquallity/android/dagger_sandbox/features/main/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/inquallity/android/dagger_sandbox/features/main/src/main/AndroidManifest.xml
+		ADDED from /home/inquallity/android/dagger_sandbox/features/main/src/main/AndroidManifest.xml:1:1-7:12
+		INJECTED from /home/inquallity/android/dagger_sandbox/features/main/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/inquallity/android/dagger_sandbox/features/main/src/main/AndroidManifest.xml:1:11-69
+application
+ADDED from /home/inquallity/android/dagger_sandbox/features/main/src/main/AndroidManifest.xml:4:5-6:19
+activity#com.inquallity.daggersandbox.main.MainActivity
+ADDED from /home/inquallity/android/dagger_sandbox/features/main/src/main/AndroidManifest.xml:5:9-83
+	android:name
+		ADDED from /home/inquallity/android/dagger_sandbox/features/main/src/main/AndroidManifest.xml:5:19-80
+uses-sdk
+INJECTED from /home/inquallity/android/dagger_sandbox/features/main/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/inquallity/android/dagger_sandbox/features/main/src/main/AndroidManifest.xml
+INJECTED from /home/inquallity/android/dagger_sandbox/features/main/src/main/AndroidManifest.xml
+INJECTED from /home/inquallity/android/dagger_sandbox/features/main/src/main/AndroidManifest.xml
+INJECTED from /home/inquallity/android/dagger_sandbox/features/main/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/inquallity/android/dagger_sandbox/features/main/src/main/AndroidManifest.xml
+		ADDED from /home/inquallity/android/dagger_sandbox/features/main/src/main/AndroidManifest.xml
+		INJECTED from /home/inquallity/android/dagger_sandbox/features/main/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/inquallity/android/dagger_sandbox/features/main/src/main/AndroidManifest.xml
+		ADDED from /home/inquallity/android/dagger_sandbox/features/main/src/main/AndroidManifest.xml
+		INJECTED from /home/inquallity/android/dagger_sandbox/features/main/src/main/AndroidManifest.xml

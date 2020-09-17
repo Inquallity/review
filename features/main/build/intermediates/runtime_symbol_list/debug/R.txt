@@ -1,0 +1,2 @@
+int id test_btn 0x7e010000
+int layout activity_main 0x7e020000

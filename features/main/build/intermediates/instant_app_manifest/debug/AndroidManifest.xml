@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    featureSplit="main"
+    package="com.inquallity.daggersandbox"
+    android:targetSandboxVersion="2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="30" />
+
+    <application
+        android:debuggable="true"
+        android:testOnly="true" >
+        <activity
+            android:name="com.inquallity.daggersandbox.main.MainActivity"
+            android:splitName="main" />
+    </application>
+
+</manifest>
