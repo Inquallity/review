@@ -1,1 +1,0 @@
--keep class com.inquallity.daggersandbox.main.MainActivity { <init>(); }
