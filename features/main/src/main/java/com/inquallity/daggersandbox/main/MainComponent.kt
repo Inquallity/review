@@ -1,16 +1,19 @@
 package com.inquallity.daggersandbox.main
 
-import com.inquallity.daggersandbox.providers.MainSubcomponent
+import com.inquallity.daggersandbox.proxy.MainProxy
+import dagger.BindsInstance
 import dagger.Component
 
-@Component(dependencies = [MainSubcomponent::class])
+@Component(
+    modules = [MainModule::class])
 interface MainComponent {
 
-    fun getMainFeature(): MainFeature
+    fun inject(t: MainActivity)
 
     @Component.Builder
     interface Builder {
-        fun mainSub(sub: MainSubcomponent): Builder
+        @BindsInstance
+        fun proxy(p: MainProxy): Builder
         fun build(): MainComponent
     }
 }

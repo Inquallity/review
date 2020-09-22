@@ -4,22 +4,26 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.inquallity.daggersandbox.AppComponent
-import com.inquallity.daggersandbox.R
+import com.inquallity.daggersandbox.feature.main.R
+import javax.inject.Inject
 
 class MainActivity : AppCompatActivity() {
+
+    @Inject
+    lateinit var feature: MainFeature
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val component: MainComponent? =
         DaggerMainComponent.builder()
-            .mainSub(AppComponent.instance.getMainSub().build())
+            .proxy(AppComponent.instance.mainProxy())
             .build()
+            .inject(this)
 
         val btn = findViewById<View>(R.id.test_btn)
         btn.setOnClickListener {
-            component?.getMainFeature()?.doSomething()
+            feature.doSomething()
         }
     }
 }

@@ -6,7 +6,7 @@ import javax.inject.Inject
 class Scanner @Inject constructor() : IScanner {
 
     override fun doScan() {
-        Log.d("OYAEBU", "scanner doing scan")
+        Log.d("OYAEBU", "scanner doing scan $this")
     }
 }
 
