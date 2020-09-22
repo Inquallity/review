@@ -2,7 +2,7 @@ package com.inquallity.daggersandbox
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import java.util.ServiceLoader
+import java.util.*
 
 class BootstrapActivity : AppCompatActivity() {
 
@@ -12,4 +12,5 @@ class BootstrapActivity : AppCompatActivity() {
         val main = services.first()
         main.open(this)
     }
+
 }

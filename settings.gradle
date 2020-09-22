@@ -1,3 +1,4 @@
+include ':base'
 include ':app'
 include ':entities:mainer'
 include ':entities:scanner'

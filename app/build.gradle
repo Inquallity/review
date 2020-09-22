@@ -41,8 +41,10 @@ android {
 }
 
 dependencies {
+    api project(":base")
     api project(":entities:mainer")
     api project(":entities:scanner")
+
     implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.72'
     implementation 'androidx.core:core-ktx:1.5.0-alpha03'
     implementation 'com.google.android.material:material:1.3.0-alpha02'

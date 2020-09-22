@@ -1,16 +1,15 @@
 package com.inquallity.daggersandbox.main
 
-import com.inquallity.daggersandbox.providers.MainSubcomponent
+import com.inquallity.daggersandbox.mainer.MainerAware
+import com.inquallity.daggersandbox.scanner.ScannerAware
 import dagger.Component
 
-@Component(dependencies = [MainSubcomponent::class])
-interface MainComponent {
-
-    fun getMainFeature(): MainFeature
-
-    @Component.Builder
-    interface Builder {
-        fun mainSub(sub: MainSubcomponent): Builder
-        fun build(): MainComponent
-    }
+@Component(
+    dependencies = [
+        MainerAware::class,
+        ScannerAware::class
+    ]
+)
+internal interface MainComponent {
+    fun feature(): MainFeature
 }

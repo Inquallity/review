@@ -4,8 +4,7 @@ import dagger.Binds
 import dagger.Module
 
 @Module
-abstract class ScannerModule {
-
+internal abstract class ScannerModule {
     @Binds
-    abstract fun pScanner(scanner: Scanner): IScanner
+    abstract fun scanner(impl: Scanner): IScanner
 }
