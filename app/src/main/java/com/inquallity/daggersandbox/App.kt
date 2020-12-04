@@ -6,9 +6,8 @@ import android.util.Log
 operator fun String.unaryPlus() = Log.d("OYAEBU", this)
 
 class App : Application() {
+
     override fun onCreate() {
         super.onCreate()
-
-        AppComponent.initialize(DaggerAppComponent.create())
     }
 }

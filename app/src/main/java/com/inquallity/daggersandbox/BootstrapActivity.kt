@@ -1,15 +1,14 @@
 package com.inquallity.daggersandbox
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import java.util.ServiceLoader
+import com.inquallity.daggersandbox.main.MainActivity
 
 class BootstrapActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val services = ServiceLoader.load(Router::class.java)
-        val main = services.first()
-        main.open(this)
+        startActivity(Intent(this, MainActivity::class.java))
     }
 }

@@ -9,6 +9,10 @@ class Mainer @Inject constructor() : IMainer {
         Log.d("OYAEBU", "Mainer doing main in $this")
     }
 
+    override fun initialize() {
+        Log.d("OYAEBU", "Do initialization of $this")
+    }
+
     // override fun doMain2() {
     //     privateMain()
     // }
@@ -20,5 +24,6 @@ class Mainer @Inject constructor() : IMainer {
 
 interface IMainer {
     fun doMain()
+    fun initialize()
     // fun doMain2()
 }

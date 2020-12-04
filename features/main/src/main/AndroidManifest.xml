@@ -1,7 +1,1 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.inquallity.daggersandbox.feature.main">
-
-    <application>
-        <activity android:name="com.inquallity.daggersandbox.main.MainActivity" />
-    </application>
-</manifest>
+<manifest package="com.inquallity.daggersandbox.feature.main" />
