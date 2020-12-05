@@ -1,10 +1,13 @@
 package com.inquallity.daggersandbox.main
 
+import android.content.Context
+import com.inquallity.daggersandbox.core.crossmodule.CrossModule
 import com.inquallity.daggersandbox.core.domain.MainInteractor
 import javax.inject.Inject
 
 class MainPresenter @Inject constructor(
-    private val interactor: MainInteractor
+    private val interactor: MainInteractor,
+    private val crossModule: CrossModule
 ) {
 
     fun initialize() {
@@ -13,5 +16,9 @@ class MainPresenter @Inject constructor(
 
     fun doSmth() {
         interactor.doSomething()
+    }
+
+    fun moveToSecondary(ctx: Context) {
+        crossModule.toSecond(ctx)
     }
 }

@@ -5,20 +5,24 @@ import android.util.Log
 import android.view.View
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.inquallity.daggersandbox.core.di.DaggerCoreComponent
+import com.inquallity.daggersandbox.core.di.CoreComponent
 import com.inquallity.daggersandbox.feature.main.R
 import com.inquallity.daggersandbox.main.di.DaggerMainComponent
 import javax.inject.Inject
 
 class MainActivity : AppCompatActivity() {
 
-    @Inject
+//    @Inject
     lateinit var presenter: MainPresenter
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        DaggerMainComponent.builder()
-            .interactor(DaggerCoreComponent.create().mainInteractor())
-            .build().inject(this)
+//        CoreComponent.instance?.apply {
+//            DaggerMainComponent.builder()
+//                .crossmodule(crossModule())
+//                .interactor(mainInteractor())
+//                .build()
+//                .inject(this@MainActivity)
+//        }
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_main)
@@ -29,8 +33,10 @@ class MainActivity : AppCompatActivity() {
         btn.setOnClickListener {
             presenter.initialize()
             presenter.doSmth()
+            presenter.moveToSecondary(this)
         }
         btn as TextView
-        btn.text = "Text on button"
+        btn.text = "Text on button 58"
+
     }
 }

@@ -3,6 +3,10 @@ package com.inquallity.daggersandbox.mainer
 import android.util.Log
 import javax.inject.Inject
 
+// Mainer это Entity - самое дно зависимостей
+// Изменяем, но никто это API не использует
+// Одинаковое поведение
+// Меняем код в Core модуле - средний по зависимостям
 class Mainer @Inject constructor() : IMainer {
 
     override fun doMain() {
@@ -13,9 +17,9 @@ class Mainer @Inject constructor() : IMainer {
         Log.d("OYAEBU", "Do initialization of $this")
     }
 
-    // override fun doMain2() {
-    //     privateMain()
-    // }
+    override fun doMain2() {
+        privateMain()
+    }
 
     private fun privateMain() {
         Log.d("OYAEBU", "Do private work; $this")
@@ -25,5 +29,5 @@ class Mainer @Inject constructor() : IMainer {
 interface IMainer {
     fun doMain()
     fun initialize()
-    // fun doMain2()
+    fun doMain2()
 }

@@ -1,13 +1,13 @@
 package com.inquallity.daggersandbox.core.domain.impl
 
 import com.inquallity.daggersandbox.core.domain.MainInteractor
-import com.inquallity.daggersandbox.mainer.Mainer
-import com.inquallity.daggersandbox.scanner.Scanner
+import com.inquallity.daggersandbox.mainer.IMainer
+import com.inquallity.daggersandbox.scanner.IScanner
 import javax.inject.Inject
-
+// КЭШ БЛЯТЬ
 class MainInteractorImpl @Inject constructor(
-    private val mainer: Mainer,
-    private val scanner: Scanner
+    private val mainer: IMainer,
+    private val scanner: IScanner
 ) : MainInteractor {
 
     override fun init() {
@@ -18,5 +18,6 @@ class MainInteractorImpl @Inject constructor(
     override fun doSomething() {
         mainer.doMain()
         scanner.doScan()
+        mainer.doMain2()
     }
 }
